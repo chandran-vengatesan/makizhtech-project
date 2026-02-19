@@ -9,8 +9,7 @@ function Contact() {
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        
-        {/* Header Section */}
+
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -19,8 +18,7 @@ function Contact() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-          
-          {/* Left Side: Contact Form */}
+
           <div>
             <h2 className="text-2xl font-semibold mb-6">Send us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -51,8 +49,7 @@ function Contact() {
                   required
                 ></textarea>
               </div>
-              
-              {/* Fixing the line that caused the error */}
+
               <button 
                 type="submit" 
                 className="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition-all active:scale-95"
@@ -62,7 +59,6 @@ function Contact() {
             </form>
           </div>
 
-          {/* Right Side: Contact Details */}
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
@@ -93,7 +89,6 @@ function Contact() {
               </div>
             </div>
 
-            {/* Dummy Map Placeholder */}
             <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden relative flex items-center justify-center border border-gray-300">
                <span className="text-gray-500 font-medium italic text-center px-4">
                  [ Google Map Integration - Coming Soon ]
@@ -106,5 +101,6 @@ function Contact() {
     </div>
   );
 }
+
 
 export default Contact;
