@@ -4,8 +4,7 @@ function Footer() {
   return (
     <footer className="bg-black text-white pt-12 pb-8 px-6 border-t border-gray-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        
-        {/* Brand & Mission */}
+
         <div className="col-span-1 md:col-span-1">
           <Link to="/" className="text-2xl font-bold flex mb-4">
             <span className="text-yellow-400">Makizh</span>
@@ -17,7 +16,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h4 className="text-lg font-bold mb-4 border-b border-yellow-400 w-fit pb-1">Quick Links</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -28,7 +26,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Services */}
         <div>
           <h4 className="text-lg font-bold mb-4 border-b border-yellow-400 w-fit pb-1">Our Expertise</h4>
           <ul className="space-y-2 text-gray-400 text-sm">
@@ -39,7 +36,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Contact Info */}
         <div>
           <h4 className="text-lg font-bold mb-4 border-b border-yellow-400 w-fit pb-1">Stay Connected</h4>
           <p className="text-gray-400 text-sm mb-2">Chennai, Tamil Nadu, India</p>
@@ -52,7 +48,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Section with Your Name */}
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center">
         <p className="text-gray-500 text-xs mb-2">
           © 2026 <span className="text-yellow-400 font-bold">MakizhTech</span>. All Rights Reserved.
@@ -65,5 +60,6 @@ function Footer() {
     </footer>
   );
 }
+
 
 export default Footer;
