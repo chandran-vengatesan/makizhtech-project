@@ -17,19 +17,17 @@ function ProductCard({ product }) {
   return (
     <div className="group border border-gray-200 rounded-lg overflow-hidden bg-white hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
       
-     {/* 🖼️ Product Image Section - Fixed Zoom Issue */}
 <div className="relative h-52 w-full overflow-hidden bg-[#f8f8f8] p-4 flex items-center justify-center">
   <img
     src={product.image}
     alt={product.name}
-    // 'object-contain' image-a crop pannaadhu, full-ah kaattum
+
     className="h-full w-full object-contain group-hover:scale-105 transition-transform duration-500"
     onError={(e) => {
       e.target.src = "https://via.placeholder.com/400x300?text=Image+Not+Found";
     }}
   />
-  
-  {/* Discount Badge */}
+
   <div className="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">
     SAVE 20%
   </div>
@@ -59,7 +57,6 @@ function ProductCard({ product }) {
         
         <p className="text-[10px] text-green-600 font-semibold mb-4">FREE Delivery</p>
 
-        {/* Dynamic Action Button */}
         <button 
           onClick={handleCartAction}
           className={`w-full text-sm font-bold py-2.5 rounded-lg shadow-sm active:scale-95 transition-all duration-300 ${
@@ -76,3 +73,4 @@ function ProductCard({ product }) {
 }
 
 export default ProductCard;
+
