@@ -35,7 +35,7 @@ function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                 <input 
                   type="email" 
-                  placeholder="abcd@example.com"
+                  placeholder="example@mail.com"
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none transition"
                   required
                 />
@@ -104,4 +104,5 @@ function Contact() {
 
 
 export default Contact;
+
 
