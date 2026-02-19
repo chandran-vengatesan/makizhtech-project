@@ -1,11 +1,9 @@
-// src/pages/cart.jsx
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
 
 function Cart() {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
 
-  // Price-a quantity-oda multiply panni total calculate pannuvom
   const totalAmount = cartItems.reduce((total, item) => total + (item.price * (item.quantity || 1)), 0);
 
   return (
@@ -27,8 +25,7 @@ function Cart() {
                 <div className="grow">
                   <h3 className="font-semibold text-gray-800">{item.name}</h3>
                   <p className="text-lg font-bold">₹{item.price.toLocaleString('en-IN')}</p>
-                  
-                  {/* +/- Quantity Controls */}
+
                   <div className="flex items-center gap-3 mt-3">
                     <button 
                       onClick={() => updateQuantity(item.id, 'dec')}
@@ -50,7 +47,6 @@ function Cart() {
             ))}
           </div>
 
-          {/* Price Summary */}
           <div className="bg-white p-6 rounded-lg shadow-sm border h-fit">
             <h2 className="text-lg font-bold mb-4 border-b pb-2">Order Summary</h2>
             <div className="flex justify-between mb-4 text-xl font-bold">
@@ -66,5 +62,6 @@ function Cart() {
     </div>
   );
 }
+
 
 export default Cart;
