@@ -41,7 +41,6 @@ function RD() {
           ))}
         </div>
 
-        {/* Project Pipeline / Process */}
         <div className="bg-yellow-50 rounded-3xl p-8 md:p-12">
           <h2 className="text-3xl font-bold mb-8 text-center">Our R&D Process</h2>
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
@@ -60,7 +59,6 @@ function RD() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-20 text-center">
           <h2 className="text-2xl font-bold mb-4">Have a custom requirement?</h2>
           <p className="text-gray-600 mb-8">Let's build your next big innovation together.</p>
@@ -72,5 +70,6 @@ function RD() {
     </div>
   );
 }
+
 
 export default RD;
