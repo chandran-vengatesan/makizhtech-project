@@ -31,7 +31,6 @@ function Partners() {
           ))}
         </div>
 
-        {/* Call to Action */}
         <div className="mt-20 bg-black text-white p-12 rounded-3xl">
           <h2 className="text-2xl font-bold mb-4">Interested in Partnering with Us?</h2>
           <p className="text-gray-400 mb-8">We are always looking for reliable suppliers and R&D collaborators.</p>
@@ -43,5 +42,6 @@ function Partners() {
     </div>
   );
 }
+
 
 export default Partners;
