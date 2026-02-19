@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="bg-white min-h-screen">
       
-      {/* 1. Hero Section */}
+
       <section className="bg-black text-white py-24 px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">
           Innovating the Future with <span className="text-yellow-400">MakizhTech</span>
@@ -23,7 +23,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 2. Overview Section */}
+
       <section className="max-w-7xl mx-auto py-20 px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           
@@ -54,7 +54,7 @@ function Home() {
         </div>
       </section>
 
-      {/* 3. Innovation Highlight */}
+
       <section className="bg-gray-50 py-20 px-6 border-y border-gray-100">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
@@ -75,7 +75,7 @@ function Home() {
             </div>
           </div>
           
-          {/* Section where the error occurred is fixed here */}
+
           <div className="flex-1 bg-black rounded-3xl p-12 text-center shadow-2xl">
              <div className="text-6xl mb-4">🔬</div>
              <h3 className="text-3xl font-bold text-white mb-2">Lab Innovation</h3>
@@ -87,5 +87,6 @@ function Home() {
     </div>
   );
 }
+
 
 export default Home;
