@@ -9,7 +9,7 @@ function AllProducts() {
       <div className="max-w-7xl mx-auto p-12">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">Our Sensor Products</h1>
         
-        {/* Ella card-ayum display panna grid logic */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {products.map((item) => (
             <ProductCard key={item.id} product={item} />
@@ -19,5 +19,6 @@ function AllProducts() {
     </div>
   );
 }
+
 
 export default AllProducts;
